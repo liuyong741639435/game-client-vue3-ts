@@ -1,16 +1,16 @@
-import { createRouter, createWebHistory,  RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
-  {
-    path: "/",
-    name: "index",
-    redirect: '/map-editor',
-  },
-  {
-    path: "/map-editor",
-    name: "map-editor",
-    component: () => import("../views/map-editor/index.vue"),
-  },
+    {
+        path: "/",
+        name: "index",
+        redirect: '/fight',
+    },
+    {
+        path: "/fight",
+        name: "fight",
+        component: () => import("../views/fight/index.vue"),
+    },
 ];
 
 export default createRouter({
